@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+:root {
+  --radius-small: 10px;
+  --radius-big: 50px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.page {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+  background: rgb(53, 53, 53);
+}
+.wrapper-BSG {
+  margin-top: 50px;
+  margin-inline: auto;
+  width: 80%;
+}
+.boxShadowGen {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: var(--radius-big);
+}
+
+.boxShadowGen-preview {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input[type="color"] {
+  border: none;
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch{
+  border: none;
+  padding: 0;
+
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  border: none;
+  padding: 0;
+}
+input[type=range] {
+  height: 20px;
+  appearance: none;
+  margin: 10px 0;
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #A0AFE8;
+  border-radius: 8px;
+
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 8px #FFFFFF;
+  height: 24px;
+  width: 7px;
+  border-radius: 2px;
+  background: #6969FF;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+
+
+.boxShadowGen-preview__element {
+  width: 50px;
+  height: 50px;
+  background-color: #5f42df;
+}
+
+.boxShadowGen-settings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 2rem;
+}
+
+.boxShadowGen-property-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxShadowGen-property-container-oneline {
+  flex-direction: row;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.boxShadowGen-result {
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+  column-gap: 1rem;
+  padding: 2rem;
+}
+
+.boxShadowGen-result__css {
+  resize: none;
+  padding: 0.5rem;
+  outline: none;
+  border-radius: var(--radius-small);
+}
+
+.boxShadowGen-result__btn {
+  border-radius: var(--radius-small);
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  background: #4c2cdb;
+  color: #ffffff;
+}
